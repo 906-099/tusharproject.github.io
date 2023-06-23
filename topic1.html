@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="icon" href="https://cdn3d.iconscout.com/3d/free/thumb/free-html-5728485-4781249.png">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML, CSS, javaScript</title>
+    <style media="screen">
+      #horizontal{
+        width: 3px;
+        height: 3px;
+        background color: black
+      }
+
+      .mainbtn{
+        padding: 10px 20px;
+        border-radius: 20px;
+        border : 5px solid #2980b9;
+        background : #ecf0f1
+        font-size : 1rem;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!--Navbar-->
+
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">Topics</a>
+        <button
+         class="navbar-toggler"
+         type="button"
+         data-bs-toggle="collapse"
+         data-bs-target="#navmenu"
+         >
+         <span class="navbar-toggler-icon"></span>
+       </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+          <!--  <li class="nav-item">
+              <a href="#html" class="nav-link">HTML</a>
+              </li> -->
+              <div class="btn-group">
+    <button type="button" class="btn-light text-light bg-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          HTML
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#basics">Basics</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#as&dis">Advantages and Disadvantages</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#example">Example</a></li>
+    </ul>
+  </div>
+          <!--  <li class="nav-item">
+              <a href="#css" class="nav-link">CSS</a>
+            </li> -->
+            <div class="btn-group">
+  <button type="button" class="btn-light text-light bg-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    CSS
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#basics1">Basics</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#ad&dis1">Advantages and Disadvantages</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#example1">Example</a></li>
+  </ul>
+</div>
+          <!--  <li class="nav-item">
+              <a href="#javascript" class="nav-link">JavaScript</a>
+            </li>-->
+            <div class="btn-group">
+  <button type="button" class="btn-light text-light bg-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    JavaScript
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#basics2">Basics</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#ad&dis2">Advantages and Disadvantages</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#example2">Example</a></li>
+  </ul>
+</div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--HTML Section-->
+
+    <section class="p-5 bg-primary-subtle" id="html">
+      <div class="container">
+        <h1 class="text-center text-light mb-2"><strong>HTML</strong></h1>
+      </div>
+    </section>
+
+    <section class="p-5" id="basics">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <img src="https://wallpaperaccess.com/full/1631871.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md">
+            <h3><u>Basics of HTML :</u></h3>
+            <p class="fs-6">
+              HTML stand for <strong>HyperText Markup Language</strong> is the standard markup language used to create the structure and content of web pages.HTML uses tags to define elements and their characteristics, such as headings, paragraphs, links, images, and forms.HTML documents are hierarchical and consist of an <strong>opening tag, content, and a closing tag</strong>. HTML provides a range of attributes to modify the behavior and appearance of elements. Web browsers interpret HTML code and render it into a visual representation that users can view and interact with on the internet. <strong> Understanding HTML is fundamental for creating and structuring web content</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-4" id="ad&dis">
+      <div class="container">
+        <h3 class="text-center mb-2"><strong><u>Advantages and Disadvantages of HTML</u></strong></h3>
+        <table  class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">S.No</th>
+              <th scope="col" class="text-center">Advantages</th>
+              <th scope="col" class="text-center">Disadvantages</th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider">
+            <tr>
+              <th scope="row">1.</th>
+              <td><strong>Simple and Easy:</strong> HTML has a straightforward syntax, making it easy for beginners to learn and use. It doesn't require complex programming skills to create basic web pages.</td>
+              <td><strong>Limited Interactivity:</strong> HTML alone lacks advanced interactivity and dynamic behavior. For more complex functionality, additional technologies like JavaScript or server-side scripting languages are required.</td>
+            </tr>
+            <tr style="background-color:#EEEEEE;">
+              <th scope="row">2.</th>
+              <td><strong>Platform Independent: </strong> HTML is supported by all major web browsers and can be viewed on different operating systems and devices, ensuring cross-platform compatibility.</td>
+              <td><strong>Design Limitations: </strong> HTML's primary focus is on content structure, not design. Although CSS can be used to style HTML elements, creating intricate layouts and design effects may require additional skills and tools.</td>
+            </tr>
+            <tr >
+              <th scope="row">3.</th>
+              <td><strong>Wide Community and Resources:</strong> HTML has a vast user community and extensive online resources available. This makes it easier to find support, tutorials, and documentation when learning or troubleshooting HTML-related issues.</td>
+              <td><strong>Lack of Security:</strong> HTML is a markup language and not designed to handle security measures directly. It does not provide built-in mechanisms for preventing security vulnerabilities such as cross-site scripting (XSS) or SQL injection attacks.</td>
+            </tr>
+            <tr>
+              <th scope="row">4.</th>
+              <td><strong>Integration with Other Technologies: </strong> HTML seamlessly integrates with other technologies like CSS for styling and JavaScript for interactivity. This allows for dynamic and visually appealing web pages.</td>
+              <td><strong>Code Maintenance:</strong> As web pages grow in complexity and size, managing and maintaining HTML code can become challenging. Manual updates and modifications across multiple HTML files can be time-consuming and prone to errors.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="p-4" id="example">
+      <div class="container">
+        <h3 class="text-emphasis mx-1"><strong><u>Example :</u></strong></h3>
+      </div>
+    </section>
+
+    <section class="p-5 bg-success-subtle">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-md text-dark">
+            <p class="fs-5">
+              <strong><u>Explaintion:</u></strong> The <strong>First line </strong>is the document type declaration and specifies that the document follows the HTML5 standard.The <strong>html tag</strong> represents the root element of an HTML document and contains all other elements.The <strong>head tag</strong> contains meta-information about the HTML document, such as title, links to stylesheets etc.The <strong>title tag</strong> sets the title of the web page, which appears in browser's title bar or tab.The <strong>body tag</strong> represents the content of the web page that will be visible in the browser window.The <strong>h1(headings) tag</strong> defines a heading element and displays the text "Welcome to My Website" as the main heading of the page.The <strong>p tag</strong> defines a paragraph element and displays the text.
+              </p>
+          </div>
+          <div class="col-md">
+            <img src="https://henryegloff.com/media/How-to-Code-a-Basic-Webpage-Using-HTML-Tutorial-2.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="border border-dark border-2 opacity-70">
+
+    <!-- css section -->
+
+    <section class="p-3 bg-primary-subtle" id="css">
+      <div class="container">
+        <h1 class="text-center text-light mb-2"><strong>CSS</strong></h1>
+      </div>
+    </section>
+
+    <section class="p-5" id="basics1">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <img src="https://wallpapercave.com/wp/wp2742433.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md">
+            <h3><u>Basics of CSS :</u></h3>
+            <p class="fs-6">
+              CSS stand for <strong>Cascading Style Sheets</strong> and is a style sheet language used to define the <strong>presentation and visual appearance of HTML elements on a web page</strong>. CSS uses selectors to target specific HTML elements and apply styles to them. Selectors can be based on element names, class names, IDs, attributes, or even the structure of the HTML document.CSS follows a <strong>cascading nature</strong>, where multiple CSS rules can target the same element. In such cases, the rules are applied based on specificity, inheritance, and order of appearance in the stylesheet.CSS consists of <strong>property-value pairs</strong>. CSS properties define specific aspects of an element, such as color, font size, margin, padding, and background, while property values determine the desired settings for those properties.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-4" id="ad&dis1">
+      <div class="container">
+        <h3 class="text-center mb-2"><strong><u>Advantages and Disadvantages of CSS</u></strong></h3>
+        <table  class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">S.No</th>
+              <th scope="col" class="text-center">Advantages</th>
+              <th scope="col" class="text-center">Disadvantages</th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider">
+            <tr>
+              <th scope="row">1.</th>
+              <td><strong>Separation of Presentation and Structure:</strong> CSS allows for the separation of the visual presentation (styles) from the HTML structure. This separation improves code maintainability, readability, and flexibility, as changes to the design can be made without altering the underlying HTML markup.</td>
+              <td><strong>Complexity for Beginners:</strong> CSS, especially when combined with advanced techniques, can be initially challenging for beginners to grasp. Understanding the various selectors, properties, values, and the intricacies of the box model requires time and practice.</td>
+            </tr>
+            <tr style="background-color:#EEEEEE;">
+              <th scope="row">2.</th>
+              <td><strong>Consistent Styling:</strong> CSS enables consistent styling across multiple web pages or a whole website by using external style sheets. By defining styles in a central CSS file, changes made to the styles are reflected throughout the site, promoting a unified and professional look. </td>
+              <td><strong>Browser Compatibility:</strong> Different web browsers may interpret CSS rules slightly differently, leading to inconsistencies in the visual appearance across browsers. Cross-browser testing and specific CSS hacks or workarounds may be necessary to ensure consistent results.</td>
+            </tr>
+            <tr >
+              <th scope="row">3.</th>
+              <td><strong>Easy and Efficient Styling:</strong>  CSS provides a wide range of selectors, properties, and values, making it easy to style HTML elements. It allows for precise targeting of specific elements and provides flexibility in terms of positioning, layout, colors, and more.</td>
+              <td><strong>Specificity and Inheritance Issues:</strong> CSS follows specific rules for resolving conflicts when multiple styles target the same element. The specificity and inheritance rules can sometimes be complex, leading to unexpected styling results and requiring careful management of styles.</td>
+            </tr>
+            <tr>
+              <th scope="row">4.</th>
+              <td><strong>Responsive Web Design:</strong> CSS offers powerful features like media queries and flexible layouts that enable the creation of responsive web designs. Websites built with CSS can automatically adapt and adjust their layout and styling based on the user's device or screen size.</td>
+              <td><strong>Lack of Dynamic Functionality: </strong> While CSS can handle certain dynamic effects like animations and transitions, it is primarily a styling language and lacks the ability to perform complex dynamic interactions or logic.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="p-4" id="example1">
+      <div class="container">
+        <h3 class="text-emphasis mx-1"><strong><u>Example :</u></strong></h3>
+      </div>
+    </section>
+
+    <section class="p-5 bg-success-subtle">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-md text-dark">
+            <p class="fs-5">
+              <strong><u>Explaintion:</u></strong> The body tag targets a pseudo-element :before that is placed before the content of the body element.<strong>"display: block"</strong> sets the display property of the pseudo-element to block. <strong>"content:''"</strong> means the pseudo-element will be treated as a block-level element and will start on a new line. This property specifies the content to be inserted before the body element. <strong>"height: 60px;"</strong> sets the height of the pseudo-element to 60 pixels. <strong>"media"</strong> is a media query that targets a specific range of viewport widths. In this case, it targets viewports with a minimum width of 768 pixels. The<strong>".news-input"</strong> is a CSS class selector targeting elements with the class name news-input. <strong>"width: 50%"</strong> sets the width property of elements with the news-input class to 50% of their parent container's width.
+          </div>
+          <div class="col-md">
+            <!--<a href="https://ibb.co/9bqQnKS">-->
+              <img src="https://i.ibb.co/sKF8jxz/Screenshot-38.png" alt="Screenshot-38" border="0" style="weidth:30px; height:450px;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="border border-dark border-2 opacity-70">
+
+    <!-- JS -->
+
+
+    <section class="p-3 bg-primary-subtle" id="javascript">
+      <div class="container">
+        <h1 class="text-center text-light mb-2"><strong>JavaScript</strong></h1>
+      </div>
+    </section>
+
+    <section class="p-5" id="basics2">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_770,h_450/https://www.cybersuccess.biz/wp-content/uploads/2022/02/TypeScript-vs-JavaScript-Key-Differences-Every-Developer-Should-Know-770x450.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md">
+            <h3><u>Basics of JavaScript :</u></h3>
+            <p class="fs-6">
+            JavaScript is a <strong>versatile scripting language</strong> that enables dynamic behavior on web pages. It allows you to <strong>manipulate and modify HTML elements, respond to user interactions, handle events, and update the content of a web page</strong> without needing to reload it. JavaScript primarily executed by the web browser on the user's device. This allows for interactive web experiences as JavaScript code can be used to validate form inputs, perform calculations, create animations, and make AJAX requests to fetch data from servers. JavaScript is an <strong>object-oriented language</strong>. Objects in JavaScript are instances of classes and can have properties and methods, making it a powerful tool for building complex applications. JavaScript has a vast ecosystem with <strong>a wide range of libraries, frameworks, and tools</strong> that extend its capabilities.
+            </p.
+        </div>
+      </div>
+    </section>
+
+    <section class="p-4" id="ad&dis2">
+      <div class="container">
+        <h3 class="text-center mb-2"><strong><u>Advantages and Disadvantages of JavaScript</u></strong></h3>
+        <table  class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">S.No</th>
+              <th scope="col" class="text-center">Advantages</th>
+              <th scope="col" class="text-center">Disadvantages</th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider">
+            <tr>
+              <th scope="row">1.</th>
+              <td><strong>Versatility:</strong> JavaScript can be used for a wide range of purposes, including web development, mobile app development, server-side programming, game development, and more. Its versatility makes it a valuable language that can be applied to various projects.</td>
+              <td><strong>Client-Side Dependency:</strong> JavaScript relies on the client's browser to execute the code. If JavaScript is disabled or not supported on a user's browser, it can limit the functionality of web applications that heavily rely on JavaScript for interactivity.</td>
+            </tr>
+            <tr style="background-color:#EEEEEE;">
+              <th scope="row">2.</th>
+              <td><strong>Client-Side Interactivity:</strong> JavaScript enables client-side interactivity, allowing developers to create dynamic and interactive web experiences. It can be used to validate form inputs, manipulate the DOM, handle user events, and provide real-time updates without requiring page reloads.</td>
+              <td><strong>Security Vulnerabilities:</strong> Due to its ubiquity, JavaScript is often targeted by malicious actors for security attacks such as cross-site scripting (XSS) and code injection. Developers need to be diligent in implementing security measures to mitigate these risks.</td>
+            </tr>
+            <tr >
+              <th scope="row">3.</th>
+              <td><strong>Large and Active Community:</strong> JavaScript has a vast and active community of developers, which means there is extensive documentation, tutorials, and resources available. This makes it easier to find support, collaborate with others, and leverage existing code libraries and frameworks.</td>
+              <td><strong>Performance Limitations:</strong> JavaScript is an interpreted language, which can sometimes result in slower performance compared to compiled languages. However, modern JavaScript engines have significantly improved performance, and optimizing techniques can help mitigate this issue.</td>
+            </tr>
+            <tr>
+              <th scope="row">4.</th>
+              <td><strong>Front-End Frameworks and Libraries:</strong> JavaScript has a rich ecosystem of front-end frameworks and libraries such as React, Angular, Vue.js, and jQuery.</td>
+              <td><strong>Learning Curve and Complexity:</strong> JavaScript has a learning curve, particularly for beginners, as it introduces concepts like asynchronous programming, closures, and prototypal inheritance.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="p-4" id="example2">
+      <div class="container">
+        <h3 class="text-emphasis mx-1"><strong><u>Example :</u></strong></h3>
+      </div>
+    </section>
+
+    <section class="p-5 bg-success-subtle">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-md text-dark">
+            <p class="fs-5">
+              <strong><u>Explaintion:</u></strong> The<strong> first line</strong> declares a variable called "name" using the var keyword. Variables are used to store and manipulate data in JavaScript. <strong>"console.log"</strong> This line uses the console.log() function to output a message to the browser console. <strong>function multiply</strong> This line declares a function called "multiply" that takes two parameters. <strong>var result = a * b;:</strong> This line multiplies the values of the "a" and "b" parameters and stores the result in a variable called "result". <strong>return result</strong> This line specifies the value to be returned by the function.  <strong>var product</strong> This line calls the "multiply" function with the arguments and stores the returned value in a variable called "product". <strong>console.log</strong> This line outputs a message to the browser console.
+              </p>
+          </div>
+          <div class="col-md">
+            <img src="https://i.ibb.co/Zc6Z7Tm/Screenshot-39.png" alt="Screenshot-39" border="0" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="p- bg-secondary text-white text-center position-relative">
+      <div class="container">
+        <p class="lead" alt="Back to Top">Copyright &copy; 2023 Tushar All Rights Reserved</p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+        <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js
+" charset="utf-8"></script>
+  </body>
+</html>
